@@ -100,7 +100,7 @@
 
 \title{
 %	\logo{
-Assignment-3
+GATE 2021 EC 
 
 \large{EE:1205 Signals and systems}
 
@@ -216,29 +216,37 @@ EE23BTECH11221
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle	
-\section{Question 1.2.4}
+\textbf{Question 47:}\\
 The autocorrection factor function $R_x \brak{\tau}$ of a wide-sense stationary random process $X \brak{t}$ is shown in the figure.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{figs/fig5.png}
     \label{fig: 10.5.3.12}
 \end{figure}
-The average power of $ X \brak{t}$ is ?
-\section{Solution}
-Here $R_x \brak{\tau = 0} = 2$ \\
+The average power of $ X \brak{t}$ is ?\\
+\begin{solution}
+\begin{table}[!h]
+    \centering
+    \input{Tables/table1} \vspace{0.5cm}
+    \caption{Values} 
+    \label{tab:mytable}
+\end{table}
+Here $R_x \brak{0} = 2$ \\
 Average power of $X \brak{t}$ is given as mean square value of $X \brak{t}$, i.e.,
 \begin{align}
-P_x = E \sbrak{X^2 \brak{t}} = E \sbrak{X \brak{t} X \brak{t}}
+P_x &= E \sbrak{X^2 \brak{t}}\\
+& = E \sbrak{X \brak{t} X \brak{t}}
 \end{align}
 Autocorrelation function of $X \brak{t}$ is defined as:
 \begin{align}
 R_x \brak{\tau} &= E \sbrak{X \brak{t} X \brak{t + \tau}} \\
-R_x \brak{\tau = 0} &= E \sbrak{X \brak{t} X \brak{t + 0}}\\
-R_x \brak{ 0} &=  E \sbrak{X \brak{t} X \brak{t}}
+R_x \brak{0} &= E \sbrak{X \brak{t} X \brak{t + 0}}\\
+&=  E \sbrak{X \brak{t} X \brak{t}}
 \end{align}
 From equations $\brak{1}$ and $\brak{3}$
 \begin{align}
-\implies P_x = R_x \brak{0} = 2 W \\
+P_x &= R_x \brak{0} \\
+\implies P_x &= 2W
 \end{align}
-Hence the average power of the system is 2 W
+\end{solution}
 \end{document}	
