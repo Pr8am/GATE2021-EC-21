@@ -232,15 +232,23 @@ The average power of $ X \brak{t}$ is ?\\
     \label{tab:mytable}
 \end{table}
 Here $R_x \brak{0} = 2$ \\
-Power spectral density of a wide sense stationary process is a positive real function. \\
-\\
-It is related to Auto co-relation function $R_x\brak{t}$ by the fourier transform:\\
+Average power of X(t) is given as mean square value of X(t), i.e. \\
 \begin{align}
-R_x\brak{\tau} &\xleftrightarrow[]{\mathcal{F}} S_x\brak{f}
-\end{align}\\
-For wide-sense stationary random process , the power of a signal is given by $R_x\brak{0}$\\
+P_x &= E\sbrak{X^2\brak{t}}\\
+&= E\sbrak{X\brak{t} X\brak{t}}
+\end{align}
+\begin {align}
+E\brak{x} &= \int_{-\infty}^{\infty} xf\brak{x}dx\\
+R_x\brak{t} &= \int_{-\infty}^{\infty} E\sbrak{X\brak{\tau} X\brak{\tau + t}} dt
+\end{align}
+Using this autocorrelation factor, 
 \begin{align}
-R_x\brak{0} = 2\\
+R_x\brak{0} &= E\sbrak{X\brak{t} X\brak{t+0}}\\
+&= E\sbrak{X\brak{t} X\brak{t}}\\
+\end{align}
+From equations $\brak{1}$ and $\brak{6}$
+\begin{align}
+P_x = R_x\brak{t}\\
 \implies P_x = 2W
 \end{align}
 \end{solution}
